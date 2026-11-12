@@ -1,5 +1,0 @@
-app
-dashboard
-detections
-evaluations
-ml

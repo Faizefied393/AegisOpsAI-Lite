@@ -10,3 +10,6 @@ __pycache__/
 artifacts/
 .promptfoo/
 node_modules/
+
+# Python packaging metadata
+*.egg-info/
