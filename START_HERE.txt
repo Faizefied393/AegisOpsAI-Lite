@@ -1,0 +1,9 @@
+AEGISOPS AI X — SIX-HOUR BUILD
+1. Read docs/SIX_HOUR_BUILD.md (full commands and screenshot locations).
+2. Install: python3 -m venv .venv && source .venv/bin/activate && pip install -e '.[dev]'
+3. cp .env.example .env; set a long AEGIS_API_KEY; source environment.
+4. python -m pytest -q; python scripts/check_all.py
+5. python -m uvicorn app.main:app --reload
+6. python -m streamlit run dashboard/app.py
+7. Use scripts/run_live_kev.py, ml/train.py, promptfoo and Trivy steps in guide.
+Only synthetic data. Do not publish secrets. Human review required.

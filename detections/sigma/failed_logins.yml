@@ -1,0 +1,15 @@
+title: AegisOps Synthetic Failed Authentication
+id: 9c0b3a51-49bc-43d6-9f74-63a99c94790b
+status: experimental
+description: Select failed authentication events; the Python correlator applies a five-in-ten-minutes threshold.
+logsource:
+  category: authentication
+detection:
+  selection:
+    event_type: auth
+    success: false
+  condition: selection
+level: medium
+tags:
+  - attack.credential_access
+  - attack.t1110
